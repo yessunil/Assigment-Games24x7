@@ -1,0 +1,40 @@
+a:hover,
+a:focus {
+    color:$btn-primary-hover;
+    text-decoration: none;
+}
+input{
+    border:1px solid $color-primary;
+    border-radius:$radius5px;
+    padding: $radius5px;
+    height:44px;
+    position: relative;
+    top: -10px;  
+    padding: 10px;      
+}
+input:focus,
+button:focus,
+a:focus {   
+    border:1px solid $color-primary;
+}
+button:focus,
+a:focus {
+    border:1px solid $color-primary;
+}
+.btn-primary{
+    background: $btn-primary-color;  
+    border-radius: $radius5px;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color-white;
+    height: 44px;
+    padding: 0.55rem;
+    line-height: 2rem;
+    font-size:$px1;    
+}
+.btn{
+    &:hover{
+        background:$btn-primary-hover;
+    }   
+}

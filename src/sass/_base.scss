@@ -1,0 +1,108 @@
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    height:100%
+  }
+  body{
+    margin: 0;
+    padding: 0;   
+    background-image:url("../../public/assets/images/1pxhome_bg.jpg");
+    height: 100%;
+    background-repeat: repeat-x; 
+  }
+  
+  .homebg {
+    margin: 0;
+    padding: 0;   
+    background-image:url("../../public/assets/images/main_bg_mobile.png");
+    height: 877px;
+    margin: 0 auto;
+    background-position: top center;
+    background-repeat: no-repeat; 
+    @include breakpoint(lg) {
+      background-image:url("../../public/assets/images/homebg.jpg");
+    }
+  }
+
+  .modal-dialog{
+    max-width: 560px;
+    .modal-content{
+      padding: 0 1rem .5rem;
+    }
+    .iconImg{
+      position:relative;   
+      left: -5px;
+      @include breakpoint(lg){    
+        left: 5px;
+        top:-20px;
+      }
+    }
+    .modal-header{
+      flex-flow: column;
+      align-items: flex-start;
+      border-bottom:0px;
+      .modal-title{
+        margin-left: 0;
+        top:0;
+        @include breakpoint(lg){
+          margin-left: 40px;
+          position:relative;
+          top:5px;
+        }
+      }
+      .btn-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+    }
+    .modal-body{
+      label{
+        color:$color-primary;
+        font-size: $font12;        
+        padding: .2rem;
+        background: $color-white; 
+        position: relative;
+        left: 10px; 
+        z-index: 1;   
+      }
+      .count-value{
+        color: $color-grey;
+        font-size: $px1;
+        text-align: right; 
+        padding:0 5px 5px;   
+      }
+      img{
+        width: auto;
+        display: block;
+        margin: 0 auto 10px;
+        @include breakpoint(lg) {
+          width: 100%;
+          display: flex;
+           margin-bottom: 0;
+        }
+      }
+    }
+  }
+ .showmodal{
+    position: absolute;   
+    cursor: pointer;
+    top: 10rem;
+    right: 5rem;
+    color:$color-white;
+    font-weight: $font-weight-bold;
+    background: $btn-primary-color;
+    padding: 0.3rem 0.5rem;
+    border-radius: $radius5px;
+    @include breakpoint(lg) {
+      top: 21rem;
+      right: 14.5rem;
+    }
+    &:hover{
+      background: $btn-primary-hover;
+    }
+ }
+ .fullwidth{
+  width: $width100;
+ }
+ 
